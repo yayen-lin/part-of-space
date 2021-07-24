@@ -53,6 +53,8 @@
 # In particular, if you're using CocoaPods, you'll want to comment-out this line:
 *.lock
 
+# GoogleService-Info.plist
+GoogleService-Info.plist
 
 #
 # profile - REMOVED temporarily (on double-checking, I can't find it in OS X docs?)
