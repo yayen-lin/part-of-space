@@ -16,6 +16,9 @@
 		A1438F7726AACF8D00325CE4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1438F7526AACF8D00325CE4 /* LaunchScreen.storyboard */; };
 		A1438F7F26ABF52F00325CE4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A1438F7E26ABF52F00325CE4 /* GoogleService-Info.plist */; };
 		A1FD7E1826AC2A530094BF35 /* firebaseNote01.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1FD7E1726AC2A530094BF35 /* firebaseNote01.swift */; };
+		A1FD7E1B26AC42A20094BF35 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1FD7E1A26AC42A20094BF35 /* SignUpViewController.swift */; };
+		A1FD7E1D26AC42AC0094BF35 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1FD7E1C26AC42AC0094BF35 /* LoginViewController.swift */; };
+		A1FD7E1F26AC42B90094BF35 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1FD7E1E26AC42B90094BF35 /* HomeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +35,9 @@
 		A1438F7826AACF8D00325CE4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A1438F7E26ABF52F00325CE4 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
 		A1FD7E1726AC2A530094BF35 /* firebaseNote01.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = firebaseNote01.swift; sourceTree = "<group>"; };
+		A1FD7E1A26AC42A20094BF35 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		A1FD7E1C26AC42AC0094BF35 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		A1FD7E1E26AC42B90094BF35 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,7 +92,7 @@
 			children = (
 				A1438F6A26AACF8C00325CE4 /* AppDelegate.swift */,
 				A1438F6C26AACF8C00325CE4 /* SceneDelegate.swift */,
-				A1438F6E26AACF8C00325CE4 /* ViewController.swift */,
+				A1FD7E1926AC42880094BF35 /* ViewControllers */,
 				A1FD7E1726AC2A530094BF35 /* firebaseNote01.swift */,
 				A1438F7026AACF8C00325CE4 /* Main.storyboard */,
 				A1438F7326AACF8D00325CE4 /* Assets.xcassets */,
@@ -95,6 +101,17 @@
 				A1438F7826AACF8D00325CE4 /* Info.plist */,
 			);
 			path = "Part-of-Space";
+			sourceTree = "<group>";
+		};
+		A1FD7E1926AC42880094BF35 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				A1438F6E26AACF8C00325CE4 /* ViewController.swift */,
+				A1FD7E1A26AC42A20094BF35 /* SignUpViewController.swift */,
+				A1FD7E1C26AC42AC0094BF35 /* LoginViewController.swift */,
+				A1FD7E1E26AC42B90094BF35 /* HomeViewController.swift */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -212,10 +229,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1FD7E1D26AC42AC0094BF35 /* LoginViewController.swift in Sources */,
 				A1FD7E1826AC2A530094BF35 /* firebaseNote01.swift in Sources */,
 				A1438F6F26AACF8C00325CE4 /* ViewController.swift in Sources */,
 				A1438F6B26AACF8C00325CE4 /* AppDelegate.swift in Sources */,
 				A1438F6D26AACF8C00325CE4 /* SceneDelegate.swift in Sources */,
+				A1FD7E1F26AC42B90094BF35 /* HomeViewController.swift in Sources */,
+				A1FD7E1B26AC42A20094BF35 /* SignUpViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
