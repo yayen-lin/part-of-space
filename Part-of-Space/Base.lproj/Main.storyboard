@@ -25,10 +25,16 @@
                                             <constraint firstAttribute="height" constant="40" id="4fr-cD-aco"/>
                                         </constraints>
                                         <state key="normal" title="Sign Up"/>
+                                        <connections>
+                                            <segue destination="QRs-YX-WXR" kind="show" id="EEO-mM-48t"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HWJ-hJ-dOU" userLabel="Login">
                                         <rect key="frame" x="0.0" y="60" width="334" height="40"/>
                                         <state key="normal" title="Login"/>
+                                        <connections>
+                                            <segue destination="61o-jc-MaH" kind="show" id="KsH-1A-h0S"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -68,20 +74,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2aC-3e-fRF" userLabel="Login Title">
-                                <rect key="frame" x="40" y="84" width="69.5" height="36"/>
+                                <rect key="frame" x="40" y="128" width="69.5" height="36"/>
                                 <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="30"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Part of Space" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7ff-qs-N0f" userLabel="Title">
-                                <rect key="frame" x="56" y="425" width="302" height="46"/>
-                                <fontDescription key="fontDescription" name="AppleColorEmoji" family="Apple Color Emoji" pointSize="35"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                                <size key="shadowOffset" width="30" height="15"/>
-                            </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="6JU-41-PgV">
-                                <rect key="frame" x="40" y="150" width="334" height="160"/>
+                                <rect key="frame" x="40" y="194" width="334" height="160"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="khV-a0-DKG">
                                         <rect key="frame" x="0.0" y="0.0" width="334" height="40"/>
@@ -137,26 +136,33 @@
                                     <constraint firstItem="P5j-Cf-dca" firstAttribute="height" secondItem="dGg-gz-iQ3" secondAttribute="height" id="T8W-Pg-YUZ"/>
                                 </constraints>
                             </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Or login with your account" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="phd-DQ-5sZ">
+                                <rect key="frame" x="40" y="536" width="335.5" height="36"/>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Ull-5E-t95"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="7ff-qs-N0f" firstAttribute="centerX" secondItem="ZUg-MC-Ruq" secondAttribute="centerX" id="0Ei-6u-dIf"/>
                             <constraint firstItem="6JU-41-PgV" firstAttribute="leading" secondItem="Ull-5E-t95" secondAttribute="leading" constant="40" id="D0r-te-eEs"/>
                             <constraint firstItem="2aC-3e-fRF" firstAttribute="top" secondItem="Ull-5E-t95" secondAttribute="top" constant="40" id="Elc-BW-ATM"/>
                             <constraint firstItem="pFz-wm-wvk" firstAttribute="leading" secondItem="Ull-5E-t95" secondAttribute="leading" constant="40" id="O8g-HK-06C"/>
                             <constraint firstItem="Ull-5E-t95" firstAttribute="trailing" secondItem="6JU-41-PgV" secondAttribute="trailing" constant="40" id="PIY-E4-2ig"/>
-                            <constraint firstItem="7ff-qs-N0f" firstAttribute="centerY" secondItem="ZUg-MC-Ruq" secondAttribute="centerY" id="QUy-9a-u8j"/>
                             <constraint firstItem="2aC-3e-fRF" firstAttribute="leading" secondItem="Ull-5E-t95" secondAttribute="leading" constant="40" id="URU-Ye-Rpr"/>
                             <constraint firstItem="Ull-5E-t95" firstAttribute="bottom" secondItem="pFz-wm-wvk" secondAttribute="bottom" constant="40" id="XER-PV-zVX"/>
+                            <constraint firstItem="pFz-wm-wvk" firstAttribute="top" secondItem="phd-DQ-5sZ" secondAttribute="bottom" constant="30" id="ZhX-9K-bmj"/>
                             <constraint firstItem="6JU-41-PgV" firstAttribute="top" secondItem="2aC-3e-fRF" secondAttribute="bottom" constant="30" id="rZr-hT-ocd"/>
+                            <constraint firstItem="phd-DQ-5sZ" firstAttribute="leading" secondItem="Ull-5E-t95" secondAttribute="leading" constant="40" id="tus-xP-ddK"/>
                             <constraint firstItem="Ull-5E-t95" firstAttribute="trailing" secondItem="pFz-wm-wvk" secondAttribute="trailing" constant="40" id="ubS-4g-GvA"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="V8T-6n-Ej5"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="g0M-rq-2Fe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1559" y="633"/>
+            <point key="canvasLocation" x="1664" y="424"/>
         </scene>
         <!--Home View Controller-->
         <scene sceneID="Rva-ac-5Bg">
@@ -167,8 +173,8 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pp6-CG-fNf">
-                                <rect key="frame" x="169" y="437.5" width="76" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <rect key="frame" x="166.5" y="437.5" width="81" height="21"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -239,13 +245,13 @@
                                 </constraints>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sign Up" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mvV-v3-FlD" userLabel="Sign Up Title">
-                                <rect key="frame" x="40" y="84" width="97.5" height="36"/>
+                                <rect key="frame" x="40" y="128" width="97.5" height="36"/>
                                 <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="30"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="LPi-R3-Qnw">
-                                <rect key="frame" x="40" y="150" width="334" height="160"/>
+                                <rect key="frame" x="40" y="194" width="334" height="160"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CTQ-2e-FYH">
                                         <rect key="frame" x="0.0" y="0.0" width="334" height="40"/>
@@ -268,12 +274,11 @@
                                     <constraint firstItem="CTQ-2e-FYH" firstAttribute="height" secondItem="H0z-Ua-ZdQ" secondAttribute="height" id="tSy-p7-w00"/>
                                 </constraints>
                             </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Part of Space" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vu1-c3-eva" userLabel="Title">
-                                <rect key="frame" x="56" y="425" width="302" height="46"/>
-                                <fontDescription key="fontDescription" name="AppleColorEmoji" family="Apple Color Emoji" pointSize="35"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Or create an account" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x1T-na-1uq">
+                                <rect key="frame" x="40" y="416" width="263.5" height="36"/>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="30"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
-                                <size key="shadowOffset" width="30" height="15"/>
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="02p-FX-MSt"/>
@@ -281,20 +286,21 @@
                         <constraints>
                             <constraint firstItem="02p-FX-MSt" firstAttribute="trailing" secondItem="S1m-Vl-yye" secondAttribute="trailing" constant="40" id="27a-dZ-LGx"/>
                             <constraint firstItem="mvV-v3-FlD" firstAttribute="leading" secondItem="02p-FX-MSt" secondAttribute="leading" constant="40" id="CKW-OI-pqh"/>
-                            <constraint firstItem="Vu1-c3-eva" firstAttribute="centerX" secondItem="WLI-1X-WVe" secondAttribute="centerX" id="HJW-07-Wmc"/>
                             <constraint firstItem="LPi-R3-Qnw" firstAttribute="top" secondItem="mvV-v3-FlD" secondAttribute="bottom" constant="30" id="JQm-oC-28n"/>
+                            <constraint firstItem="S1m-Vl-yye" firstAttribute="top" secondItem="x1T-na-1uq" secondAttribute="bottom" constant="30" id="PUN-cG-Q7e"/>
+                            <constraint firstItem="x1T-na-1uq" firstAttribute="leading" secondItem="02p-FX-MSt" secondAttribute="leading" constant="40" id="WcR-NT-3DW"/>
                             <constraint firstItem="mvV-v3-FlD" firstAttribute="top" secondItem="02p-FX-MSt" secondAttribute="top" constant="40" id="aUE-gc-Pfj"/>
                             <constraint firstItem="02p-FX-MSt" firstAttribute="bottom" secondItem="S1m-Vl-yye" secondAttribute="bottom" constant="40" id="g7a-Ag-MmV"/>
                             <constraint firstItem="S1m-Vl-yye" firstAttribute="leading" secondItem="02p-FX-MSt" secondAttribute="leading" constant="40" id="iC9-6t-6n1"/>
                             <constraint firstItem="02p-FX-MSt" firstAttribute="trailing" secondItem="LPi-R3-Qnw" secondAttribute="trailing" constant="40" id="lBq-7h-35X"/>
                             <constraint firstItem="LPi-R3-Qnw" firstAttribute="leading" secondItem="02p-FX-MSt" secondAttribute="leading" constant="40" id="tMB-QW-V7Y"/>
-                            <constraint firstItem="Vu1-c3-eva" firstAttribute="centerY" secondItem="WLI-1X-WVe" secondAttribute="centerY" id="waS-zt-zJh"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="n3r-Af-77n"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0S6-OS-rOA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1583" y="-31"/>
+            <point key="canvasLocation" x="1664" y="-244"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="EWr-Wx-UJR">
