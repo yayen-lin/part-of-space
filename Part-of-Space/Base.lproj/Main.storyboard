@@ -60,6 +60,10 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Xje-jk-KDN"/>
+                    <connections>
+                        <outlet property="loginButton" destination="HWJ-hJ-dOU" id="bxC-9m-vUg"/>
+                        <outlet property="signUpButton" destination="8av-f2-aeV" id="VSO-hK-w4h"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -122,6 +126,9 @@
                                             <constraint firstAttribute="height" constant="40" id="aLo-V3-pgo"/>
                                         </constraints>
                                         <state key="normal" title="Login!"/>
+                                        <connections>
+                                            <action selector="loginTapped:" destination="61o-jc-MaH" eventType="touchUpInside" id="0OB-mP-j9K"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Error" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P5j-Cf-dca">
                                         <rect key="frame" x="0.0" y="180" width="334" height="40"/>
@@ -159,6 +166,12 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="V8T-6n-Ej5"/>
+                    <connections>
+                        <outlet property="errorLabel" destination="P5j-Cf-dca" id="dEs-YY-KkG"/>
+                        <outlet property="loginButton" destination="dGg-gz-iQ3" id="LxV-2N-yla"/>
+                        <outlet property="passwordTextField" destination="4Iq-BS-8Od" id="HzF-BC-cMx"/>
+                        <outlet property="usernameTextField" destination="0Ms-Qy-4bl" id="Za1-aF-uYe"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="g0M-rq-2Fe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -228,6 +241,9 @@
                                             <constraint firstAttribute="height" constant="40" id="Z3R-Pt-Biw"/>
                                         </constraints>
                                         <state key="normal" title="Sign Me Up!"/>
+                                        <connections>
+                                            <action selector="signUpTapped:" destination="QRs-YX-WXR" eventType="touchUpInside" id="MNw-m1-PDx"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Error" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="06A-co-koP">
                                         <rect key="frame" x="0.0" y="300" width="334" height="40"/>
@@ -297,6 +313,14 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="n3r-Af-77n"/>
+                    <connections>
+                        <outlet property="confirmedPasswordTextField" destination="P8Z-6C-8aS" id="cfF-mo-jkE"/>
+                        <outlet property="emailTextField" destination="t3g-ks-tro" id="IjP-VL-4T9"/>
+                        <outlet property="errorLabel" destination="06A-co-koP" id="cwf-eG-MW6"/>
+                        <outlet property="passwordTextField" destination="ucu-nl-zKz" id="Tpf-DA-Nei"/>
+                        <outlet property="signUpButton" destination="Iry-F9-ICY" id="Fky-Eu-Usa"/>
+                        <outlet property="usernameTextField" destination="MpV-gB-IWs" id="xrD-lO-J3E"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0S6-OS-rOA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
