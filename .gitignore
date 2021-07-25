@@ -56,6 +56,9 @@
 # GoogleService-Info.plist
 GoogleService-Info.plist
 
+# my user and login info
+user.txt
+
 #
 # profile - REMOVED temporarily (on double-checking, I can't find it in OS X docs?)
 #profile

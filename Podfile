@@ -9,10 +9,10 @@ target 'Part-of-Space' do
 
   # add the Firebase pod for Google Analytics
   pod 'Firebase/Analytics'
-	pod 'Firebase/Auth'
-	pod 'Firebase/Core'
-	pod 'Firebase/Firestore'
-	pod 'FirebaseFirestoreSwift'
+  pod 'Firebase/Auth'
+  pod 'Firebase/Core'
+  pod 'Firebase/Firestore'
+  pod 'FirebaseFirestoreSwift'
   # or pod ‘Firebase/AnalyticsWithoutAdIdSupport’
   # for Analytics without IDFA collection capability
 
